@@ -82,7 +82,7 @@
       });
 
       // Update pagination info
-      pageInfo.textContent = `Page ${currentPage} of ${Math.ceil(data.length / rowsPerPage)}`;
+      pageInfo.textContent = `{{Page}} ${currentPage} {{of}} ${Math.ceil(data.length / rowsPerPage)}`;
       prevBtn.classList.toggle("disabled", currentPage === 1);
       nextBtn.classList.toggle("disabled", currentPage === Math.ceil(data.length / rowsPerPage));
   }
